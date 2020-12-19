@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/2e232db0a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css"/>
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body>
 
     <form>
+        <div class="field-error innactive" id="error-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div id="error-msg" class="error-msg"></div>
+        </div>
         <div class="field-name">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="Username" required>
@@ -31,7 +35,7 @@
             <i class="fas fa-heart"></i>
         </div>
     </form>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>    
 </body>
 </html>

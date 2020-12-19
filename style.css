@@ -27,12 +27,42 @@ body{
     border-radius: 5px;
 }
 
+.field-error{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+    /*background-color: white;*/
+    width: 500px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 5px;*/
+    font-size: 15px;
+}
+.field-error .error-msg{
+    font-size: 18px;
+    color: rgb(71, 9, 9);
+    font-weight: 600;
+}
 .field-name i,
 .field-email i,
 .field-password i,
 .field-finish i{
     padding: 10px;
     cursor: pointer;
+}
+
+.field-finish i{
+    color: rgb(226, 6, 6);
+}
+
+.field-error i{
+    /*margin-top: 15px;*/
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(248, 248, 22);
 }
 
 .field-name input,
@@ -45,13 +75,13 @@ body{
     outline: none;
 }
 
-div.innactive{
+.innactive{
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, 50%);
 }
 
-div.active{
+.active{
     opacity: 1;
     pointer-events: all;
     transform: translate(-50% , -50%);
